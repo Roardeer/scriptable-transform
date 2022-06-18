@@ -12,7 +12,7 @@ const createWidget = (name: WidgetName, props: any, parentWidget: ParentWidget):
       w = parentWidget.addImage(props.image);
       break;
     case WidgetName.text:
-      w = parentWidget.addText(props.text);
+      w = parentWidget.addText(props.text.toString());
       break;
     case WidgetName.date:
       w = parentWidget.addDate(props.date);
